@@ -20,6 +20,22 @@ public class MedicineControl {
     // Constructor
     public MedicineControl() {
         medicineList = new LinkedList<>();
+        loadPredefinedObj();
+    }
+
+    private void loadPredefinedObj() {
+        Medicine m1 = new Medicine(1, "Paracetamol", "IntPharma", 200, 30, "2025-12-11");
+        Medicine m2 = new Medicine(2, "Neko", "Nepal private LTD", 250, 10, "2026-12-11");
+        Medicine m3 = new Medicine(3, "Fraction", "IntPharma", 200, 30, "2025-12-11");
+        Medicine m4 = new Medicine(4, "Decol", "IntPharma", 200, 30, "2025-12-11");
+        Medicine m5 = new Medicine(5, "Codobar", "IntPharma", 200, 30, "2025-12-11");
+
+        medicineList.add(m1);
+        medicineList.add(m2);
+        medicineList.add(m3);
+        medicineList.add(m4);
+        medicineList.add(m5);
+
     }
 
     // Add medicine to LinkedList
